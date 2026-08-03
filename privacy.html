@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hu">
 <head>
 <meta charset="utf-8">
@@ -23,6 +23,7 @@
     padding: 1.25rem 1.4rem; margin: 0 0 1rem;
   }
   .headline { font-size: 1.05rem; font-weight: 600; }
+  .english-title { margin-top: 3rem; }
   ul { padding-left: 1.15rem; margin: .5rem 0; }
   li { margin: .3rem 0; }
   a { color: #4b46c4; }
@@ -40,23 +41,28 @@
 <body>
 <main>
   <h1>Adatvédelmi tájékoztató</h1>
-  <p class="lede">Spirit · Hatályos: 2026. július 28.</p>
+  <p class="lede">Spirit · Hatályos: 2026. augusztus 3.</p>
 
   <div class="card">
     <span class="lang">Magyar</span>
-    <p class="headline">A Spirit nem gyűjt rólad semmilyen adatot.</p>
-    <p>Nincs regisztráció, nincs felhasználói fiók, nincs analitika, nincs hirdetés,
-       és nincs harmadik fél, aki bármit látna abból, amit írsz.</p>
+    <p class="headline">A Spirit nem használ analitikát, hirdetést vagy követést, és nem értékesít személyes adatot.</p>
+    <p>Nincs Spirit-regisztráció vagy fejlesztői felhasználói fiók. Az alábbiakban
+       pontosan leírjuk, milyen adatot kezel az alkalmazás a készülékeden, mikor
+       kerülhet adat az Apple iCloudjába, illetve mi történik, ha e-mailt küldesz.</p>
 
     <h3>Ami a készülékeden marad</h3>
-    <p>A napló, a naponta rögzített idők, a jegyzeteid, a hangfelvételeid, az
-       imalistáid és a beállításaid mind a készüléked saját tárhelyén tárolódnak.
-       Ezekhez a fejlesztő nem fér hozzá, és nem is kerülnek sehova.</p>
+    <p>A kihívás neve és adatai, a napi napló és jelölések, a rögzített idők,
+       jegyzetek, hangfelvételek, imalisták és beállítások a készülék saját
+       tárhelyén tárolódnak. A fejlesztő ezeket nem kapja meg és nem látja.</p>
 
     <h3>iCloud-szinkronizálás (választható, alapból kikapcsolva)</h3>
-    <p>Ha bekapcsolod, az adataid a <strong>saját iCloud-fiókodba</strong> kerülnek,
-       az Apple privát adatbázisába. Ez a te tárhelyed: a fejlesztőnek nincs és nem
-       is lehet hozzáférése. A szinkronizálás bármikor kikapcsolható.</p>
+    <p>Ha bekapcsolod, a naplóadatok és a hangfelvételek a <strong>saját
+       iCloud-fiókodhoz tartozó privát CloudKit-adatbázisba</strong> kerülnek, hogy
+       a készülékeid között szinkronizálhatók legyenek. Az Apple az iCloud
+       szolgáltatója; az adatkezelésére az Apple adatvédelmi szabályai is
+       vonatkoznak. A fejlesztő nem kap hozzáférést a privát tartalmadhoz.
+       A szinkronizálás bármikor kikapcsolható, de a kikapcsolás önmagában nem
+       törli az iCloudban már meglévő másolatot.</p>
 
     <h3>Hangfelvételek</h3>
     <p>A mikrofonhoz csak akkor kérünk hozzáférést, amikor hangjegyzetet rögzítesz.
@@ -65,44 +71,76 @@
 
     <h3>Visszajelzés</h3>
     <p>Ha az appból írsz a fejlesztőnek, a levelet a <strong>saját
-       levelezőprogramod</strong> küldi, a saját címedről. Semmilyen szerverre nem
-       kerül. Te döntöd el, mit írsz bele, és hogy csatolsz-e képernyőképet.
-       A naplóbejegyzéseid soha nem kerülnek bele automatikusan.</p>
+       levelezőprogramod és e-mail-szolgáltatód</strong> továbbítja a fejlesztő
+       postafiókjába. Ilyenkor a fejlesztő megkapja a feladó e-mail-címét, a levél
+       tárgyát és szövegét, valamint az általad választott mellékleteket.
+       A „Technikai adatok csatolása” kapcsoló alapból ki van kapcsolva. Ha
+       bekapcsolod, az alkalmazás- és buildverzió, a készülék típusa, az iOS-verzió
+       és az alkalmazás nyelve kerülhet a levélbe. Naplóbejegyzés és a naplózott
+       napok száma nem kerül bele automatikusan.</p>
 
-    <h3>Támogatás és előfizetés</h3>
-    <p>A fizetést teljes egészében az Apple intézi az App Store-on keresztül.
-       A fejlesztő nem lát és nem tárol semmilyen fizetési adatot – csak azt,
-       hogy egy előfizetés érvényes-e, és ezt is az Apple mondja meg a
-       készülékednek, nem egy szervernek.</p>
+    <h3>App Store-vásárlások</h3>
+    <p>A fizetést az Apple intézi az App Store-on keresztül. A fejlesztő nem kapja
+       meg a bankkártya- vagy fizetési adataidat. Az alkalmazás a készüléken az
+       Apple StoreKit rendszerétől ellenőrzi, hogy egy megvásárolt jogosultság
+       elérhető-e.</p>
+
+    <h3>Megőrzés, exportálás és törlés</h3>
+    <p>A helyi adatok addig maradnak a készüléken, amíg az alkalmazásban nem törlöd
+       őket, illetve az alkalmazást és annak adatait el nem távolítod. Az iCloudba
+       szinkronizált adatok addig maradnak ott, amíg kifejezetten nem törlöd őket.
+       Az adatkezelési funkciót tartalmazó Spirit-verzióban a
+       <em>Beállítások → Adatkezelés</em> alatt exportálhatod az adataidat, illetve
+       törölheted a helyi és a Spirithez tartozó iCloud-adatokat. Ha ez a menüpont
+       a nálad lévő verzióban még nem látható, az iCloud-tárhelyet az Apple-fiókod
+       iCloud-beállításaiban kezelheted, és az alábbi címen segítséget kérhetsz.</p>
+    <p>A támogatási e-maileket és mellékleteket csak a kérdés megválaszolásához és
+       a hiba kivizsgálásához használjuk, majd legkésőbb 12 hónapon belül töröljük,
+       kivéve, ha jogi kötelezettség miatt hosszabb megőrzés szükséges. Korábbi
+       támogatási leveled törlését bármikor kérheted e-mailben.</p>
+
+    <h3>Az adataiddal kapcsolatos jogaid</h3>
+    <p>Hozzáférést, helyesbítést vagy törlést kérhetsz a fejlesztőhöz eljutott
+       támogatási adatokra. A készüléken és a privát iCloudban lévő tartalmat a
+       fejlesztő nem tudja megtekinteni vagy helyetted exportálni; ezeket az
+       alkalmazás és az Apple-fiókod adatkezelési lehetőségeivel kezelheted.</p>
 
     <h3>Gyerekek</h3>
-    <p>Az app nem gyűjt adatot senkitől, így gyerekektől sem.</p>
+    <p>Az alkalmazás nem gyermekeknek készült, nem tartalmaz célzott hirdetést,
+       és nem gyűjt tudatosan gyermekektől személyes adatot. Kérjük, gyermek ne
+       küldjön személyes adatot támogatási e-mailben szülő vagy gondviselő
+       engedélye nélkül.</p>
 
     <h3>Változás</h3>
     <p>Ha ez a tájékoztató valaha változik, az itt közzétett dátum is változik.</p>
 
     <h3>Kapcsolat</h3>
-    <p><a href="mailto:norbert.p83@gmail.com">norbert.p83@gmail.com</a></p>
+    <p>Adatkezelő és fejlesztő: Norbert Penték<br>
+       <a href="mailto:norbert.p83@gmail.com">norbert.p83@gmail.com</a></p>
   </div>
 
-  <h1 style="margin-top:3rem">Privacy Policy</h1>
-  <p class="lede">Spirit · Effective: 28 July 2026</p>
+  <h1 class="english-title">Privacy Policy</h1>
+  <p class="lede">Spirit · Effective: 3 August 2026</p>
 
   <div class="card">
     <span class="lang">English</span>
-    <p class="headline">Spirit collects no data about you.</p>
-    <p>There is no sign-up, no account, no analytics, no advertising, and no third
-       party that sees anything you write.</p>
+    <p class="headline">Spirit uses no analytics, advertising or tracking, and does not sell personal data.</p>
+    <p>There is no Spirit registration or developer-operated user account. This
+       policy explains exactly what the app processes on your device, when data
+       may be stored in Apple's iCloud, and what happens when you send an email.</p>
 
     <h3>What stays on your device</h3>
-    <p>Your journal, recorded times, notes, voice recordings, prayer lists and
-       settings are all stored on your own device. The developer cannot access
-       them, and they are not sent anywhere.</p>
+    <p>Your challenge name and details, daily journal and check-ins, recorded
+       times, notes, voice recordings, prayer lists and settings are stored on
+       your device. The developer does not receive or see this content.</p>
 
     <h3>iCloud sync (optional, off by default)</h3>
-    <p>If you turn it on, your data goes to <strong>your own iCloud account</strong>,
-       in Apple's private database. That is your storage: the developer has no
-       access to it and cannot be given any. You can turn sync off at any time.</p>
+    <p>If you turn it on, journal data and voice recordings are stored in the
+       <strong>private CloudKit database associated with your iCloud account</strong>
+       so they can sync between your devices. Apple provides iCloud, and Apple's
+       privacy terms also apply to that processing. The developer is not given
+       access to your private content. You can turn sync off at any time, but
+       switching it off does not by itself delete a copy already in iCloud.</p>
 
     <h3>Voice recordings</h3>
     <p>Microphone access is requested only when you record a voice note. Recordings
@@ -110,24 +148,50 @@
        never sent anywhere else and never processed.</p>
 
     <h3>Feedback</h3>
-    <p>If you write to the developer from inside the app, the message is sent by
-       <strong>your own mail app</strong>, from your own address. It touches no
-       server. You decide what it says and whether to attach a screenshot. Your
-       journal entries are never included automatically.</p>
+    <p>If you write from inside the app, your <strong>mail app and email
+       provider</strong> deliver the message to the developer's mailbox. The
+       developer then receives your sender address, subject and message, plus any
+       attachments you choose. “Include technical diagnostics” is off by default.
+       If enabled, it may add the app and build version, device model, iOS version
+       and app language. Journal entries and the number of logged days are not
+       included automatically.</p>
 
-    <h3>Support and subscriptions</h3>
-    <p>Payment is handled entirely by Apple through the App Store. The developer
-       neither sees nor stores any payment details — only whether a subscription is
-       active, and Apple tells your device that directly rather than a server.</p>
+    <h3>App Store purchases</h3>
+    <p>Apple handles payment through the App Store. The developer does not receive
+       your card or payment details. On your device, the app asks Apple's StoreKit
+       whether a purchased entitlement is available.</p>
+
+    <h3>Retention, export and deletion</h3>
+    <p>Local data remains on the device until you delete it in the app or remove
+       the app and its data. Synced data remains in iCloud until you explicitly
+       delete it. In a Spirit version that includes Data Management, use
+       <em>Settings → Data Management</em> to export your data or delete local and
+       Spirit iCloud data. If your installed version does not yet show that item,
+       you can manage iCloud storage in your Apple Account's iCloud settings and
+       contact the address below for help.</p>
+    <p>Support emails and attachments are used only to reply and investigate the
+       reported issue, and are deleted within 12 months unless a longer period is
+       required by law. You may ask us to delete an earlier support email at any
+       time.</p>
+
+    <h3>Your data rights</h3>
+    <p>You may request access, correction or deletion of support information that
+       reached the developer. The developer cannot view or export content stored
+       on your device or in your private iCloud on your behalf; use the controls
+       provided by the app and your Apple Account for that content.</p>
 
     <h3>Children</h3>
-    <p>The app collects no data from anyone, children included.</p>
+    <p>The app is not directed to children, contains no targeted advertising, and
+       does not knowingly collect children's personal data. Children should not
+       send personal information in a support email without permission from a
+       parent or guardian.</p>
 
     <h3>Changes</h3>
     <p>If this policy ever changes, the date shown above changes with it.</p>
 
     <h3>Contact</h3>
-    <p><a href="mailto:norbert.p83@gmail.com">norbert.p83@gmail.com</a></p>
+    <p>Data controller and developer: Norbert Penték<br>
+       <a href="mailto:norbert.p83@gmail.com">norbert.p83@gmail.com</a></p>
   </div>
 
   <footer><a href="index.html">← Spirit</a> · © 2026 Norbert Penték</footer>
