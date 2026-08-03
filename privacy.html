@@ -3,197 +3,226 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A Spirit alkalmazás magyar és angol adatvédelmi tájékoztatója.">
+<link rel="canonical" href="https://norbertpentek.github.io/spirit-app/privacy.html">
 <title>Spirit – Adatvédelmi tájékoztató / Privacy Policy</title>
 <style>
   :root { color-scheme: light dark; }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body {
     margin: 0; padding: 2.5rem 1.25rem 4rem;
     font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: #1c1c1e; background: #f7f7fa;
     display: flex; justify-content: center;
   }
-  main { width: 100%; max-width: 42rem; }
+  main { width: 100%; max-width: 46rem; }
   h1 { font-size: 1.85rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
-  h2 { font-size: 1.15rem; margin: 2.25rem 0 .6rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.15rem; margin: 2.15rem 0 .6rem; letter-spacing: -.01em; }
   h3 { font-size: 1rem; margin: 1.4rem 0 .4rem; }
-  .lede { color: #6b6b70; margin: 0 0 2rem; }
+  p { margin: .55rem 0; }
+  .lede { color: #6b6b70; margin: 0 0 1.25rem; }
   .card {
     background: #fff; border: 1px solid #e6e6ea; border-radius: 14px;
-    padding: 1.25rem 1.4rem; margin: 0 0 1rem;
+    padding: 1.35rem 1.5rem; margin: 0 0 1rem;
   }
-  .headline { font-size: 1.05rem; font-weight: 600; }
-  .english-title { margin-top: 3rem; }
-  ul { padding-left: 1.15rem; margin: .5rem 0; }
-  li { margin: .3rem 0; }
+  .summary { border-left: 4px solid #4b46c4; }
+  .headline { font-size: 1.05rem; font-weight: 650; }
+  .english-title { margin-top: 3.5rem; }
+  ul { padding-left: 1.2rem; margin: .55rem 0; }
+  li { margin: .4rem 0; }
   a { color: #4b46c4; }
+  nav { margin: 0 0 1.75rem; }
+  nav a { margin-right: .85rem; }
   .lang { display: inline-block; font-size: .78rem; text-transform: uppercase;
           letter-spacing: .08em; color: #8e8e93; margin-bottom: .4rem; }
+  .fine { color: #6b6b70; font-size: .92rem; }
   footer { margin-top: 3rem; font-size: .85rem; color: #8e8e93; }
   @media (prefers-color-scheme: dark) {
     body { color: #f2f2f7; background: #101014; }
     .card { background: #1a1a20; border-color: #2a2a32; }
-    .lede, footer, .lang { color: #9a9aa2; }
+    .lede, .fine, footer, .lang { color: #9a9aa2; }
     a { color: #a9a4ff; }
+    .summary { border-left-color: #a9a4ff; }
   }
 </style>
 </head>
 <body>
 <main>
-  <h1>Adatvédelmi tájékoztató</h1>
-  <p class="lede">Spirit · Hatályos: 2026. augusztus 3.</p>
+  <nav aria-label="Nyelv / Language">
+    <a href="#magyar">Magyar</a>
+    <a href="#english" lang="en">English</a>
+  </nav>
 
-  <div class="card">
-    <span class="lang">Magyar</span>
-    <p class="headline">A Spirit nem használ analitikát, hirdetést vagy követést, és nem értékesít személyes adatot.</p>
-    <p>Nincs Spirit-regisztráció vagy fejlesztői felhasználói fiók. Az alábbiakban
-       pontosan leírjuk, milyen adatot kezel az alkalmazás a készülékeden, mikor
-       kerülhet adat az Apple iCloudjába, illetve mi történik, ha e-mailt küldesz.</p>
+  <section id="magyar" lang="hu" aria-labelledby="hu-title">
+    <h1 id="hu-title">Adatvédelmi tájékoztató</h1>
+    <p class="lede">Spirit · Hatályos: 2026. augusztus 4.</p>
 
-    <h3>Ami a készülékeden marad</h3>
-    <p>A kihívás neve és adatai, a napi napló és jelölések, a rögzített idők,
-       jegyzetek, hangfelvételek, imalisták és beállítások a készülék saját
-       tárhelyén tárolódnak. A fejlesztő ezeket nem kapja meg és nem látja.</p>
+    <div class="card summary">
+      <span class="lang">Röviden</span>
+      <p class="headline">A Spirit nem használ reklámot, követést vagy hálózati analitikát, nem készít felhasználói profilt, és nem értékesít vagy ad bérbe személyes adatot.</p>
+      <p>Nincs Spirit-regisztráció vagy a fejlesztő által üzemeltetett felhasználói fiók. A napló- és hangadatok a készülékeden maradnak, illetve – ha engedélyezed – a saját Apple iCloud-fiókod privát CloudKit-adatbázisába kerülnek. A fejlesztő csak azt az adatot kapja meg, amelyet önként elküldesz neki támogatási e-mailben.</p>
+    </div>
 
-    <h3>iCloud-szinkronizálás (választható, alapból kikapcsolva)</h3>
-    <p>Ha bekapcsolod, a naplóadatok és a hangfelvételek a <strong>saját
-       iCloud-fiókodhoz tartozó privát CloudKit-adatbázisba</strong> kerülnek, hogy
-       a készülékeid között szinkronizálhatók legyenek. Az Apple az iCloud
-       szolgáltatója; az adatkezelésére az Apple adatvédelmi szabályai is
-       vonatkoznak. A fejlesztő nem kap hozzáférést a privát tartalmadhoz.
-       A szinkronizálás bármikor kikapcsolható, de a kikapcsolás önmagában nem
-       törli az iCloudban már meglévő másolatot.</p>
+    <div class="card">
+      <span class="lang">Magyar</span>
 
-    <h3>Hangfelvételek</h3>
-    <p>A mikrofonhoz csak akkor kérünk hozzáférést, amikor hangjegyzetet rögzítesz.
-       A felvételek a készülékeden maradnak, és ha bekapcsoltad, a saját iCloudodba
-       kerülnek. Sehova máshova nem küldjük őket, és nem dolgozzuk fel őket.</p>
+      <h2>1. A tájékoztató hatálya és az adatkezelő</h2>
+      <p>Ez a tájékoztató a Spirit iOS-alkalmazásra, valamint a Spirit támogatási és adatvédelmi weboldalára vonatkozik. Adatkezelő és fejlesztő: <strong>Norbert Penték</strong> független fejlesztő. Kapcsolat: <a href="mailto:norbert.p83@gmail.com">norbert.p83@gmail.com</a>.</p>
 
-    <h3>Visszajelzés</h3>
-    <p>Ha az appból írsz a fejlesztőnek, a levelet a <strong>saját
-       levelezőprogramod és e-mail-szolgáltatód</strong> továbbítja a fejlesztő
-       postafiókjába. Ilyenkor a fejlesztő megkapja a feladó e-mail-címét, a levél
-       tárgyát és szövegét, valamint az általad választott mellékleteket.
-       A „Technikai adatok csatolása” kapcsoló alapból ki van kapcsolva. Ha
-       bekapcsolod, az alkalmazás- és buildverzió, a készülék típusa, az iOS-verzió
-       és az alkalmazás nyelve kerülhet a levélbe. Naplóbejegyzés és a naplózott
-       napok száma nem kerül bele automatikusan.</p>
+      <h2>2. Milyen adatot kezel a Spirit?</h2>
 
-    <h3>App Store-vásárlások</h3>
-    <p>A fizetést az Apple intézi az App Store-on keresztül. A fejlesztő nem kapja
-       meg a bankkártya- vagy fizetési adataidat. Az alkalmazás a készüléken az
-       Apple StoreKit rendszerétől ellenőrzi, hogy egy megvásárolt jogosultság
-       elérhető-e.</p>
+      <h3>Készüléken tárolt alkalmazásadatok</h3>
+      <p>A kihívások neve és adatai, napi jelölések és naplóbejegyzések, rögzített idők, jegyzetek, imalisták, hangjegyzetek, megjelenési és egyéb beállítások a készülék alkalmazástárhelyén tárolódnak. Ezek nem kerülnek a fejlesztő szerverére, és a fejlesztő nem látja őket.</p>
 
-    <h3>Megőrzés, exportálás és törlés</h3>
-    <p>A helyi adatok addig maradnak a készüléken, amíg az alkalmazásban nem törlöd
-       őket, illetve az alkalmazást és annak adatait el nem távolítod. Az iCloudba
-       szinkronizált adatok addig maradnak ott, amíg kifejezetten nem törlöd őket.
-       Az adatkezelési funkciót tartalmazó Spirit-verzióban a
-       <em>Beállítások → Saját adataid → Adatok kezelése</em> alatt exportálhatod
-       az adataidat, illetve
-       törölheted a helyi és a Spirithez tartozó iCloud-adatokat. Ha ez a menüpont
-       a nálad lévő verzióban még nem látható, az iCloud-tárhelyet az Apple-fiókod
-       iCloud-beállításaiban kezelheted, és az alábbi címen segítséget kérhetsz.</p>
-    <p>A támogatási e-maileket és mellékleteket csak a kérdés megválaszolásához és
-       a hiba kivizsgálásához használjuk, majd legkésőbb 12 hónapon belül töröljük,
-       kivéve, ha jogi kötelezettség miatt hosszabb megőrzés szükséges. Korábbi
-       támogatási leveled törlését bármikor kérheted e-mailben.</p>
+      <h3>Választható iCloud-szinkronizálás</h3>
+      <p>Új felhasználónál a szinkronizálás alapból ki van kapcsolva. Ha kifejezetten hozzájárulsz és bekapcsolod, az alkalmazásadataid – beleértve a naplóadatokat, beállításokat és hangfelvételeket – a <strong>saját Apple-fiókodhoz tartozó privát CloudKit-adatbázisba</strong> kerülnek, hogy Apple-készülékeid között szinkronizálhatók és visszaállíthatók legyenek. Az adat nem kerül a fejlesztő saját szerverére vagy postafiókjába. A privát CloudKit-tartalom a fejlesztői felületen nem látható a fejlesztő számára. Az Apple a fejlesztő megbízásából dolgozza fel az adatot az iCloud biztosításához, és az Apple feltételeiben meghatározott szűk jogi vagy felhasználói kéréshez kapcsolódó esetekben hozzáférhet.</p>
+      <p>Új készüléken vagy újratelepítés után a Spirit egyszeri, csak olvasási célú ellenőrzéssel felismerheti, hogy korábban az aktuális hozzájárulási tájékoztatás elfogadásával engedélyezted-e a szinkronizálást. Csak ilyen érvényes, korábban rögzített engedély alapján állítja vissza automatikusan a korábbi beállítást és iCloud-adatokat; egyébként a szinkronizálás kikapcsolva marad. A szinkronizálás kikapcsolása rögzíti a választásodat, de <strong>önmagában nem törli</strong> az iCloudban már meglévő másolatot.</p>
 
-    <h3>Az adataiddal kapcsolatos jogaid</h3>
-    <p>Hozzáférést, helyesbítést vagy törlést kérhetsz a fejlesztőhöz eljutott
-       támogatási adatokra. A készüléken és a privát iCloudban lévő tartalmat a
-       fejlesztő nem tudja megtekinteni vagy helyetted exportálni; ezeket az
-       alkalmazás és az Apple-fiókod adatkezelési lehetőségeivel kezelheted.</p>
+      <h3>Mikrofon, kiválasztott képek és értesítések</h3>
+      <ul>
+        <li>A mikrofonhoz csak akkor kérünk hozzáférést, amikor hangjegyzetet indítasz. A Spirit a hangot rögzíti, helyben tárolja, lejátszhatóvá és exportálhatóvá teszi, és bekapcsolt szinkronizálásnál az Apple privát CloudKit-adatbázisában tárolja. Nem írja át szöveggé, nem elemzi és nem használja reklámra; a fejlesztő csak akkor kapja meg, ha te magad elküldöd vagy megosztod vele.</li>
+        <li>Visszajelzéshez az Apple rendszer-képválasztójával legfeljebb három képet választhatsz ki. A Spirit csak az általad kiválasztott képeket kapja meg, a teljes fotókönyvtárat nem.</li>
+        <li>Az engedélyezett emlékeztetők helyi értesítések. A Spirit nem használ távoli push-szervert és nem gyűjt push tokent.</li>
+      </ul>
 
-    <h3>Gyerekek</h3>
-    <p>Az alkalmazás nem gyermekeknek készült, nem tartalmaz célzott hirdetést,
-       és nem gyűjt tudatosan gyermekektől személyes adatot. Kérjük, gyermek ne
-       küldjön személyes adatot támogatási e-mailben szülő vagy gondviselő
-       engedélye nélkül.</p>
+      <h3>Önkéntes támogatási e-mail</h3>
+      <p>Ha az appból írsz, a rendszer levelezőfelületén te ellenőrzöd és küldöd el a levelet. A saját levelezőprogramod és e-mail-szolgáltatód továbbítja azt a fejlesztő Gmail-postafiókjába. A fejlesztő ekkor megkapja a feladó címét, a tárgyat és a szöveget, valamint az általad kiválasztott mellékleteket. A „Technikai adatok csatolása” alapból ki van kapcsolva; ha bekapcsolod, az app- és buildverzió, a készüléktípus, az iOS-verzió és az app nyelve kerülhet a levélbe. Naplóbejegyzés vagy a naplózott napok száma nem kerül bele automatikusan.</p>
+      <p>A támogatási adat megadása nem kötelező: nélküle az app továbbra is használható, de e-mailben nem tudunk válaszolni. Ne küldj naplóbejegyzést, hangfelvételt, szükségtelen különleges adatot vagy más személy adatát; a szöveg és a képernyőkép is tartalmazhat érzékeny információt.</p>
+      <p>Ha a levelezőfelület nem érhető el, külön választással a levél tárgyát és szövegét a rendszer vágólapjára másolhatod; a képmellékletek nem kerülnek a vágólapra. Beillesztés után érdemes a vágólapot más tartalom másolásával felülírni. A Spirit nem olvassa a vágólap más tartalmát.</p>
 
-    <h3>Változás</h3>
-    <p>Ha ez a tájékoztató valaha változik, az itt közzétett dátum is változik.</p>
+      <h3>App Store-vásárlások</h3>
+      <p>Az alkalmazáson belüli egyszeri vásárlásokat az Apple kezeli az App Store és a StoreKit segítségével. A fejlesztő nem kapja meg a bankkártya- vagy teljes fizetési adataidat. Az app a készüléken az Apple-től kapott jogosultság alapján oldja fel az egyszer megvásárolható támogatói megjelenéseket; az egyszeri támogatások nem oldanak fel funkciót.</p>
 
-    <h3>Kapcsolat</h3>
-    <p>Adatkezelő és fejlesztő: Norbert Penték<br>
-       <a href="mailto:norbert.p83@gmail.com">norbert.p83@gmail.com</a></p>
-  </div>
+      <h3>A támogatási és adatvédelmi weboldal</h3>
+      <p>A weboldalt a GitHub Pages szolgálja ki. A fejlesztő nem helyezett el rajta analitikai, reklám- vagy követőkódot, és nem használ saját sütit. A GitHub a szolgáltatás működtetéséhez és biztonságához technikai naplóadatokat – például IP-címet és kérésadatokat – kezelhet a saját adatvédelmi tájékoztatója szerint.</p>
 
-  <h1 class="english-title">Privacy Policy</h1>
-  <p class="lede">Spirit · Effective: 3 August 2026</p>
+      <h2>3. Célok és jogalapok</h2>
+      <ul>
+        <li><strong>Az app kért funkcióinak biztosítása:</strong> az általad kért lépések és a veled fennálló szerződés teljesítése (GDPR/UK GDPR 6. cikk (1) b)).</li>
+        <li><strong>Választható iCloud, mikrofon, képek és értesítések:</strong> a te önkéntes, egyértelmű választásod és az iOS-ben adott engedélyed. Ha a napló vagy hang különleges adatot tartalmaz, a privát iCloudban történő kezelés feltétele a külön megadott kifejezett hozzájárulásod (9. cikk (2) a)). Az engedélyt később visszavonhatod.</li>
+        <li><strong>Támogatás:</strong> a kérésed megválaszolása, valamint a szolgáltatás biztonságához, hibajavításához és fejlesztéséhez fűződő jogos érdek (6. cikk (1) f)). A nem szükséges mellékletek és diagnosztika elküldése mindig választható.</li>
+        <li><strong>Jogi kötelezettség és igényérvényesítés:</strong> ha konkrét jogszabály kötelez rá (6. cikk (1) c)), illetve jogi igény előterjesztéséhez vagy védelméhez szükséges.</li>
+      </ul>
+      <p>A lelki napló, imalista vagy szabad szöveg vallási meggyőződésre, egészségre vagy más különleges adatra is utalhat. Ilyen tartalmat csak akkor adj meg, ha ezt tudatosan választod és kifejezetten kéred, hogy az app a fent leírt módon kezelje. A fejlesztő ezt nem elemzi és nem következtet belőle. A hozzájárulásodat a tartalom törlésével, illetve az iCloud-szinkron leállításával bármikor visszavonhatod; ez nem érinti a korábbi kezelés jogszerűségét. Támogatási levélben ne küldj szükségtelen különleges vagy más személyre vonatkozó adatot.</p>
 
-  <div class="card">
-    <span class="lang">English</span>
-    <p class="headline">Spirit uses no analytics, advertising or tracking, and does not sell personal data.</p>
-    <p>There is no Spirit registration or developer-operated user account. This
-       policy explains exactly what the app processes on your device, when data
-       may be stored in Apple's iCloud, and what happens when you send an email.</p>
+      <h2>4. Adatátvevők és nemzetközi adattovábbítás</h2>
+      <p>A működésben az Apple (iCloud, CloudKit, App Store, StoreKit és iOS-rendszerfunkciók), támogatási levélnél a te e-mail-szolgáltatód és a Google/Gmail, a weboldalnál a GitHub Pages, exportnál pedig az általad kiválasztott megosztási cél szolgáltatója vehet részt. Személyes adatot nem adunk el, nem adunk bérbe, és nem adunk át reklám- vagy adatbrókernek.</p>
+      <p>E szolgáltatók az adatokat az Egyesült Királyságon vagy az Európai Gazdasági Térségen kívül is kezelhetik. Ilyenkor az adott szolgáltató tájékoztatójában ismertetett megfelelőségi határozat, adatvédelmi keretrendszer, általános szerződési feltétel vagy más jogszerű garancia alkalmazható. További részletek: <a href="https://www.apple.com/legal/privacy/">Apple adatvédelem</a>, <a href="https://policies.google.com/privacy">Google adatvédelem</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub adatvédelem</a>.</p>
 
-    <h3>What stays on your device</h3>
-    <p>Your challenge name and details, daily journal and check-ins, recorded
-       times, notes, voice recordings, prayer lists and settings are stored on
-       your device. The developer does not receive or see this content.</p>
+      <h2>5. Megőrzés</h2>
+      <ul>
+        <li>A helyi adat addig marad a készüléken, amíg az appban nem törlöd, vagy az appot és helyi adatait el nem távolítod.</li>
+        <li>A privát iCloud-adat a kifejezett törlésig, illetve az Apple-fiókodban történő törlésig maradhat meg. Az Apple saját biztonsági mentési és megőrzési szabályai is alkalmazandók.</li>
+        <li>A támogatási levelet és mellékleteit legfeljebb az utolsó érdemi kapcsolatfelvételtől számított 12 hónapig őrizzük, majd töröljük, kivéve, ha jogi kötelezettség vagy jogi igény miatt az alkalmazandó megőrzési vagy elévülési idő végéig szükséges.</li>
+        <li>A webhely technikai naplóinak megőrzését a GitHub saját szabályai határozzák meg.</li>
+      </ul>
 
-    <h3>iCloud sync (optional, off by default)</h3>
-    <p>If you turn it on, journal data and voice recordings are stored in the
-       <strong>private CloudKit database associated with your iCloud account</strong>
-       so they can sync between your devices. Apple provides iCloud, and Apple's
-       privacy terms also apply to that processing. The developer is not given
-       access to your private content. You can turn sync off at any time, but
-       switching it off does not by itself delete a copy already in iCloud.</p>
+      <h2>6. Beállítás, exportálás és törlés</h2>
+      <p>A <em>Beállítások → Saját adataid → Adatok kezelése</em> alatt exportálhatod az alkalmazásadataidat, törölheted a helyi adatokat, illetve a Spirithez tartozó privát iCloud-adatokat. Az export titkosítatlan ZIP-fájl, amely érzékeny napló- és hangadatot tartalmazhat: csak megbízható célba mentsd vagy küldd. A megosztás után a kiválasztott cél szolgáltatójának saját szabályai érvényesek; a Spirit a saját ideiglenes ZIP-fájlját a megosztó bezárása után törli. A szinkron puszta kikapcsolása nem töröl. Ha egy másik, offline készüléken is maradt helyi másolat, azon külön is törölni kell, nehogy később visszaszinkronizálja. Az iCloud-tárhely az Apple-fiók iCloud-beállításaiban is kezelhető. A mikrofon-, fotó- és értesítési engedélyeket az iOS Beállításokban bármikor módosíthatod. Támogatási levél elküldése előtt megszakíthatod a műveletet.</p>
 
-    <h3>Voice recordings</h3>
-    <p>Microphone access is requested only when you record a voice note. Recordings
-       stay on your device, and go to your own iCloud if you enabled sync. They are
-       never sent anywhere else and never processed.</p>
+      <h2>7. Az adataiddal kapcsolatos jogaid</h2>
+      <p>Az alkalmazandó adatvédelmi jog alapján kérhetsz hozzáférést, helyesbítést, törlést, az adatkezelés korlátozását vagy – ahol alkalmazható – adathordozhatóságot; tiltakozhatsz a jogos érdeken alapuló kezelés ellen; és bármikor visszavonhatod a hozzájárulásodat. A fejlesztőhöz eljutott támogatási adatokról a fenti e-mail-címen kérhetsz intézkedést. Szükség esetén személyazonosság-ellenőrzést kérhetünk. Az alkalmazandó GDPR vagy UK GDPR szerint a kérelmekre rendszerint egy hónapon belül válaszolunk.</p>
+      <p>A készüléken és a privát iCloudban lévő tartalmat a fejlesztő nem tudja a saját oldaláról megtekinteni, helyesbíteni vagy helyetted exportálni, ezért ezekhez az app és az Apple-fiók vezérlőit használd. Panaszt tehetsz a szokásos tartózkodási helyed, munkahelyed vagy a feltételezett jogsértés helye szerinti felügyeleti hatóságnál; az Egyesült Királyságban az <a href="https://ico.org.uk/make-a-complaint/">ICO</a>, Magyarországon a <a href="https://www.naih.hu/">NAIH</a> jár el.</p>
 
-    <h3>Feedback</h3>
-    <p>If you write from inside the app, your <strong>mail app and email
-       provider</strong> deliver the message to the developer's mailbox. The
-       developer then receives your sender address, subject and message, plus any
-       attachments you choose. “Include technical diagnostics” is off by default.
-       If enabled, it may add the app and build version, device model, iOS version
-       and app language. Journal entries and the number of logged days are not
-       included automatically.</p>
+      <h2>8. Biztonság</h2>
+      <p>A Spirit az iOS alkalmazástárhelyére és az Apple privát CloudKit-védelmére támaszkodik, adatminimalizálást alkalmaz, és nem üzemeltet saját tartalmi szervert. Védelmed érdekében használj készülékjelszót, védd az Apple-fiókodat, és támogatási levélben csak szükséges adatot küldj. Egyetlen elektronikus rendszer sem garantálhat teljes biztonságot.</p>
 
-    <h3>App Store purchases</h3>
-    <p>Apple handles payment through the App Store. The developer does not receive
-       your card or payment details. On your device, the app asks Apple's StoreKit
-       whether a purchased entitlement is available.</p>
+      <h2>9. Gyermekek</h2>
+      <p>A Spirit nem kifejezetten gyermekeknek készült, nem végez életkor szerinti profilozást, és nem tartalmaz célzott hirdetést. Aki a saját országának szabályai szerint még nem adhat önállóan érvényes adatvédelmi hozzájárulást, csak szülő vagy gondviselő segítségével küldjön támogatási levelet vagy adjon meg személyes adatot.</p>
 
-    <h3>Retention, export and deletion</h3>
-    <p>Local data remains on the device until you delete it in the app or remove
-       the app and its data. Synced data remains in iCloud until you explicitly
-       delete it. In a Spirit version that includes data management, use
-       <em>Settings → Your data → Manage data</em> to export your data or delete local and
-       Spirit iCloud data. If your installed version does not yet show that item,
-       you can manage iCloud storage in your Apple Account's iCloud settings and
-       contact the address below for help.</p>
-    <p>Support emails and attachments are used only to reply and investigate the
-       reported issue, and are deleted within 12 months unless a longer period is
-       required by law. You may ask us to delete an earlier support email at any
-       time.</p>
+      <h2>10. Automatizált döntés és profilalkotás</h2>
+      <p>A Spirit nem végez jogi vagy hasonlóan jelentős hatású automatizált döntéshozatalt, és nem készít reklám- vagy viselkedési profilt.</p>
 
-    <h3>Your data rights</h3>
-    <p>You may request access, correction or deletion of support information that
-       reached the developer. The developer cannot view or export content stored
-       on your device or in your private iCloud on your behalf; use the controls
-       provided by the app and your Apple Account for that content.</p>
+      <h2>11. Változások és kapcsolat</h2>
+      <p>Lényeges változás esetén frissítjük ezt az oldalt és a fenti hatálybalépési dátumot. Adatvédelmi kérdés vagy kérelem: <a href="mailto:norbert.p83@gmail.com">norbert.p83@gmail.com</a>.</p>
+    </div>
+  </section>
 
-    <h3>Children</h3>
-    <p>The app is not directed to children, contains no targeted advertising, and
-       does not knowingly collect children's personal data. Children should not
-       send personal information in a support email without permission from a
-       parent or guardian.</p>
+  <section id="english" lang="en" aria-labelledby="en-title">
+    <h1 id="en-title" class="english-title">Privacy Policy</h1>
+    <p class="lede">Spirit · Effective: 4 August 2026</p>
 
-    <h3>Changes</h3>
-    <p>If this policy ever changes, the date shown above changes with it.</p>
+    <div class="card summary">
+      <span class="lang">In brief</span>
+      <p class="headline">Spirit uses no advertising, tracking or network analytics, creates no user profile, and does not sell or rent personal data.</p>
+      <p>There is no Spirit registration or developer-operated user account. Journal and audio data stay on your device or, if you enable it, in the private CloudKit database of your own Apple iCloud account. The developer receives only information you voluntarily send in a support email.</p>
+    </div>
 
-    <h3>Contact</h3>
-    <p>Data controller and developer: Norbert Penték<br>
-       <a href="mailto:norbert.p83@gmail.com">norbert.p83@gmail.com</a></p>
-  </div>
+    <div class="card">
+      <span class="lang">English</span>
+
+      <h2>1. Scope and controller</h2>
+      <p>This policy applies to the Spirit iOS app and the Spirit support and privacy website. Controller and developer: <strong>Norbert Penték</strong>, independent developer. Contact: <a href="mailto:norbert.p83@gmail.com">norbert.p83@gmail.com</a>.</p>
+
+      <h2>2. What data does Spirit process?</h2>
+
+      <h3>App data stored on the device</h3>
+      <p>Challenge names and details, daily check-ins and journal entries, recorded times, notes, prayer lists, voice notes, appearance choices and other settings are stored in the app's storage on your device. They are not sent to a developer server, and the developer does not see them.</p>
+
+      <h3>Optional iCloud sync</h3>
+      <p>Sync is off by default for a new user. If you expressly consent and enable it, your app data—including journal data, settings and voice recordings—is stored in the <strong>private CloudKit database associated with your own Apple Account</strong> so it can sync and be restored across your Apple devices. The data is not sent to a server or mailbox operated by the developer. Private CloudKit content is not visible to the developer through the developer interface. Apple processes it on the developer's behalf to provide iCloud and may access it in the limited legal or user-request circumstances described in Apple's terms.</p>
+      <p>On a new device or after reinstallation, Spirit may make a one-time, read-only check to recognise whether you previously enabled sync after accepting the current consent information. It automatically restores the prior setting and iCloud data only where such a valid consent record is found; otherwise sync remains off. Turning sync off records your choice, but does <strong>not by itself delete</strong> a copy already stored in iCloud.</p>
+
+      <h3>Microphone, selected photos and notifications</h3>
+      <ul>
+        <li>Microphone access is requested only when you start a voice note. Spirit records and stores the audio locally, makes it available for playback and export, and, when sync is enabled, stores it in Apple's private CloudKit database. It does not transcribe or analyse recordings or use them for advertising; the developer receives one only if you choose to send or share it.</li>
+        <li>For feedback, you can choose up to three images through Apple's system photo picker. Spirit receives only the images you select, not your full photo library.</li>
+        <li>Enabled reminders are local notifications. Spirit uses no remote push server and collects no push token.</li>
+      </ul>
+
+      <h3>Voluntary support email</h3>
+      <p>If you write from the app, you review and send the message in the system mail interface. Your mail app and email provider deliver it to the developer's Gmail mailbox. The developer then receives your sender address, subject and message, plus attachments you select. “Include technical diagnostics” is off by default; if enabled, it may add the app and build version, device model, iOS version and app language. Journal entries and the number of logged days are not included automatically.</p>
+      <p>Providing support data is optional: the app remains usable without it, but we cannot reply by email. Do not send journal entries, voice recordings, unnecessary special-category information or another person's data; text and screenshots may also contain sensitive information.</p>
+      <p>If the mail interface is unavailable, you may separately choose to copy the prepared subject and message to the system clipboard; image attachments are not copied. After pasting, consider replacing the clipboard by copying something else. Spirit does not read other clipboard content.</p>
+
+      <h3>App Store purchases</h3>
+      <p>Apple processes one-time in-app purchases through the App Store and StoreKit. The developer does not receive your card or full payment details. On the device, the app uses the entitlement supplied by Apple to unlock the one-time supporter theme purchase; one-time tips do not unlock functionality.</p>
+
+      <h3>Support and privacy website</h3>
+      <p>The website is served by GitHub Pages. The developer has added no analytics, advertising or tracking code and uses no first-party cookie. GitHub may process technical log data, such as an IP address and request information, to operate and secure the service under its own privacy notice.</p>
+
+      <h2>3. Purposes and legal bases</h2>
+      <ul>
+        <li><strong>Providing app features you request:</strong> taking steps at your request and performing the contract with you (GDPR/UK GDPR Article 6(1)(b)).</li>
+        <li><strong>Optional iCloud, microphone, photos and notifications:</strong> your voluntary, affirmative choice and the permission you give through iOS. If journal or audio content contains special-category data, processing it in private iCloud requires the separate explicit consent you give (Article 9(2)(a)). You can withdraw permission later.</li>
+        <li><strong>Support:</strong> responding to your request and the legitimate interests of securing, troubleshooting and improving the service (Article 6(1)(f)). Unnecessary attachments and diagnostics are always optional.</li>
+        <li><strong>Legal obligations and claims:</strong> where required by a specific law (Article 6(1)(c)) or necessary to establish, exercise or defend a legal claim.</li>
+      </ul>
+      <p>A spiritual journal, prayer list or free text may reveal religious beliefs, health information or other special-category data. Enter such content only if you knowingly choose to do so and expressly request the app to process it as described above. The developer does not analyse it or draw inferences from it. You can withdraw your choice by deleting the content and, for iCloud processing, stopping sync; withdrawal does not affect earlier lawful processing. Do not include unnecessary special-category data or information about another person in a support email.</p>
+
+      <h2>4. Recipients and international transfers</h2>
+      <p>Apple (iCloud, CloudKit, App Store, StoreKit and iOS system features), your email provider and Google/Gmail for support mail, GitHub Pages for the website, and the destination provider you select when exporting may take part in delivering these services. We do not sell or rent personal data or disclose it to advertising companies or data brokers.</p>
+      <p>These providers may process data outside the United Kingdom or European Economic Area. Where this occurs, an adequacy decision, applicable data privacy framework, standard contractual clauses or another lawful safeguard described by the provider may apply. Details: <a href="https://www.apple.com/legal/privacy/">Apple Privacy</a>, <a href="https://policies.google.com/privacy">Google Privacy</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy</a>.</p>
+
+      <h2>5. Retention</h2>
+      <ul>
+        <li>Local data remains on the device until you delete it in the app or remove the app and its local data.</li>
+        <li>Private iCloud data may remain until you explicitly delete it or delete it through your Apple Account. Apple's own backup and retention rules also apply.</li>
+        <li>Support messages and attachments are kept for no more than 12 months after the last substantive contact, then deleted, unless a legal obligation or legal claim requires them until the applicable retention or limitation period ends.</li>
+        <li>GitHub determines retention of the website's technical logs under its own policy.</li>
+      </ul>
+
+      <h2>6. Controls, export and deletion</h2>
+      <p>Use <em>Settings → Your data → Manage data</em> to export app data, delete local data, or delete Spirit data from private iCloud. The export is an unencrypted ZIP file that may contain sensitive journal and audio data: save or send it only to a trusted destination. After sharing, the selected destination provider's own rules apply; Spirit deletes its own temporary ZIP when the share sheet closes. Merely turning sync off does not delete data. If a local copy remains on another offline device, delete it separately there so that it cannot later upload the old copy again. You can also manage iCloud storage in your Apple Account settings. Microphone, photo and notification permissions can be changed at any time in iOS Settings. You can cancel a support message before sending it.</p>
+
+      <h2>7. Your data rights</h2>
+      <p>Under applicable data protection law, you may request access, correction, erasure, restriction or—where applicable—portability; object to processing based on legitimate interests; and withdraw consent at any time. Use the email address above for support data that reached the developer. We may need to verify your identity. Where the GDPR or UK GDPR applies, we normally respond within one month.</p>
+      <p>The developer cannot inspect, correct or export device content or private iCloud content from the developer's side, so use the app and Apple Account controls for that data. You may complain to the supervisory authority for your habitual residence, place of work or the alleged infringement; in the United Kingdom this is the <a href="https://ico.org.uk/make-a-complaint/">ICO</a>, and in Hungary it is the <a href="https://www.naih.hu/">NAIH</a>.</p>
+
+      <h2>8. Security</h2>
+      <p>Spirit relies on iOS app storage and Apple's private CloudKit protections, minimises data, and operates no developer content server. Protect yourself with a device passcode, secure your Apple Account, and send only necessary data in support mail. No electronic system can guarantee complete security.</p>
+
+      <h2>9. Children</h2>
+      <p>Spirit is not specifically directed to children, does not profile by age and contains no targeted advertising. Anyone below the age at which they can give valid data-protection consent independently in their country should send support mail or enter personal data only with help from a parent or guardian.</p>
+
+      <h2>10. Automated decisions and profiling</h2>
+      <p>Spirit makes no automated decision with legal or similarly significant effects and creates no advertising or behavioural profile.</p>
+
+      <h2>11. Changes and contact</h2>
+      <p>If this policy changes materially, we will update this page and the effective date above. Privacy questions or requests: <a href="mailto:norbert.p83@gmail.com">norbert.p83@gmail.com</a>.</p>
+    </div>
+  </section>
 
   <footer><a href="index.html">← Spirit</a> · © 2026 Norbert Penték</footer>
 </main>
